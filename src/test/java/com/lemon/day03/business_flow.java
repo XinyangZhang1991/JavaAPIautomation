@@ -1,11 +1,11 @@
-package day03;
+package com.lemon.day03;
 
 
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-public class busniess_flow {
+public class business_flow {
     public static void main(String[] args) {
         //1、登录
         //登录接口
@@ -37,7 +37,7 @@ public class busniess_flow {
                         log().body().extract().response();
         int skuId = response3.jsonPath().get("skuList[0].skuId");
 
-        //添加购物车
+        //4 添加购物车
         Response response4 =
                 given().
                         header("Authorization",token).

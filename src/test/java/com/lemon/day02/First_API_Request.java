@@ -1,4 +1,4 @@
-package day02;
+package com.lemon.day02;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
