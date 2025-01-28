@@ -2,6 +2,7 @@ package Day05.common;
 
 
 import Day05.pojo.CaseData;
+import Day05.util.JDBCUtil;
 import Day05.util.Log4jTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,10 +30,16 @@ public class BaseTest {
         String method = caseData.getMethod();
         String headers = caseData.getHeaders();
         String params = caseData.getParams();
+        String postsql = caseData.getPostsql();
+        String db_assertion = caseData.getDb_assertion();
         //请求头中{{XXX}}替换
         headers = replaceParam(headers);
         //请求参数中{{XXX}}替换
         params = replaceParam(params);
+        //请求地址中{{XXX}}替换
+        url = replaceParam(url);
+        postsql = replaceParam(postsql);
+        db_assertion=replaceParam(db_assertion);
         //
         logger.info("=================请求信息=================");
         logger.info("请求方法:" + method);
@@ -75,8 +82,12 @@ public class BaseTest {
         assertResponse(res,caseData.getExpected());
         //响应提取
         extractResponse(res,caseData.getExtractedResponse());
+        extractSQL (postsql);
+        //assertSQL(assertsql);
         return res;
     }
+
+    //public void assertSQL();
 
     public void assertResponse(Response res,String expected){
         //先判空，如果是excel表中的expected是空的， 那么整个断言方法就不需要再执行了
@@ -113,6 +124,28 @@ public class BaseTest {
         }
     }
 
+    /**
+     * 数据库断言封装
+     * @param assertSql
+     */
+    public void assertSQL(String assertSql){
+        if(assertSql != null){
+            HashMap<String,Object> assertSqlMap = jsonToMap(assertSql);
+            Set<String> keys = assertSqlMap.keySet();
+            logger.info("=================数据库断言=================");
+            for(String key : keys){
+                //key为要执行的SQL语句
+                //value期望值
+                Object value = assertSqlMap.get(key);
+                Object result = JDBCUtil.querySingleData(key);
+                logger.info("执行的SQL语句:"+key);
+                logger.info("期望值:"+value+"，实际值:"+result);
+                //类型不一致的解决思路：让两者类型统一：中间角色-String
+                Assert.assertEquals(result+"",value+"");
+            }
+        }
+    }
+
     //提取的方法
     public void extractResponse(Response res, String extractInfo){
         if(extractInfo != null) {
@@ -128,6 +161,24 @@ public class BaseTest {
                 logger.info("=================提取响应=================");
                 logger.info("变量名:"+key+"，变量值:"+result);
                 Environment.env.put(key, result);
+            }
+        }
+    }
+
+    public void extractSQL(String sqlInfo){
+        //{"code":"SELECT mobile_code FROM tz_sms_log WHERE user_phone = '13323234521'"}
+        if(sqlInfo != null){
+            HashMap<String,Object> sqlMap = jsonToMap(sqlInfo);
+            Set<String> keys = sqlMap.keySet();
+            logger.info("===========执行后置SQL==========");
+            for (String key: keys){
+                String sql = (String) sqlMap.get(key);
+                //执行sql - Java代码
+                Object result = JDBCUtil.querySingleData(sql);
+                //保存到环境变量中
+                Environment.env.put(key,result);
+                logger.info("执行的后置SQL语句是:"+sql);
+                logger.info("得到的值是:"+result);
             }
         }
     }
@@ -155,7 +206,6 @@ public class BaseTest {
         }
         return null;
     }
-
 
 
 

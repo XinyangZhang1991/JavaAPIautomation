@@ -17,7 +17,7 @@ public class SearchTest extends BaseTest {
 
     @Test(dataProvider = "getExcelData")
     //每一条caseData都是一条整个的测试用例数据
-    public void test_login(CaseData caseData) {
+    public void test_search(CaseData caseData) {
         System.out.println(caseData);
         request(caseData);
     }

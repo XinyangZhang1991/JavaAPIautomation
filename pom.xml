@@ -48,12 +48,7 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.10.2</version>
-      <scope>test</scope>
-    </dependency>
+
 
     <dependency>
       <groupId>com.alibaba</groupId>
@@ -102,7 +97,33 @@
       <artifactId>allure-testng</artifactId>
       <version>2.29.0</version>
     </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+
+    <!-- 通过maven引入本地的加密jar包 -->
+    <!-- ${basedir} : 表示当前项目的根目录 -->
+
+    <dependency>
+      <groupId>com.lemon</groupId>
+      <artifactId>encryption</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/src/test/resources/lemon.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+
   </dependencies>
+
+
+
+
 
   <build>
     <plugins>
