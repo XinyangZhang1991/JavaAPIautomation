@@ -29,6 +29,6 @@ public class CaseData {
     private String extractedResponse;
     @ExcelProperty ("postsql")
     private String postsql;
-    @ExcelProperty ("DB_assertion")
+    @ExcelProperty ("db_assertion")
     private String db_assertion;
 }

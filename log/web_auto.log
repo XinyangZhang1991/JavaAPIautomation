@@ -1,144 +1,77 @@
-2025-01-29 09:34:04 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:04 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:04 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/login
-2025-01-29 09:34:04 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8"}
-2025-01-29 09:34:04 INFO  BaseTest:48 - 请求参数:{"principal":"lemon70","credentials":"12345678","appType":3,"loginType":0}
-2025-01-29 09:34:06 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:06 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:06 INFO  BaseTest:78 - 响应时间:1736ms
-2025-01-29 09:34:06 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Set-Cookie=JSESSIONID=A107DA256CB8D5F92FE4D115720DEC7D; Path=/; HttpOnly, Content-Type=application/json;charset=UTF-8, Content-Length=316, Date=Wed, 29 Jan 2025 09:34:07 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:06 INFO  BaseTest:80 - 响应体:{"access_token":"95506c06-5d6c-4c2d-bd9c-e86718b987c6","token_type":"bearer","refresh_token":"2923e041-5632-42a7-8f76-df49b99483be","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2025/01/c2f665d3ea70466b94c9c776a49345ab.png","userId":"6e82d8331fd74e5eb38a8524bea3a2fc","nickName":"lemon70","enabled":true}
-2025-01-29 09:34:06 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:06 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:07 INFO  BaseTest:119 - 响应字段断言，提取响应字段【nickName】实际值【lemon70】期望值【lemon70】
-2025-01-29 09:34:07 INFO  BaseTest:119 - 响应字段断言，提取响应字段【enabled】实际值【true】期望值【true】
-2025-01-29 09:34:07 INFO  BaseTest:161 - =================提取响应=================
-2025-01-29 09:34:07 INFO  BaseTest:162 - 变量名:token，变量值:95506c06-5d6c-4c2d-bd9c-e86718b987c6
-2025-01-29 09:34:07 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:07 INFO  BaseTest:45 - 请求方法:get
-2025-01-29 09:34:07 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/search/searchProdPage
-2025-01-29 09:34:07 INFO  BaseTest:47 - 请求头:null
-2025-01-29 09:34:07 INFO  BaseTest:48 - 请求参数:?prodName=真皮圆筒包
-2025-01-29 09:34:07 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:07 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:07 INFO  BaseTest:78 - 响应时间:652ms
-2025-01-29 09:34:07 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:09 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:07 INFO  BaseTest:80 - 响应体:{"records":[{"prodId":4919,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","prodName":"真皮圆筒包","price":799.0,"prodCommNumber":0,"positiveRating":0.0,"praiseNumber":0}],"total":1,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"hitCount":false,"countId":null,"maxLimit":null,"searchCount":true,"pages":1}
-2025-01-29 09:34:07 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:07 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:07 INFO  BaseTest:161 - =================提取响应=================
-2025-01-29 09:34:07 INFO  BaseTest:162 - 变量名:prodId，变量值:4919
-2025-01-29 09:34:07 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:07 INFO  BaseTest:45 - 请求方法:get
-2025-01-29 09:34:07 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/prod/prodInfo
-2025-01-29 09:34:07 INFO  BaseTest:47 - 请求头:null
-2025-01-29 09:34:07 INFO  BaseTest:48 - 请求参数:?prodId=4919
-2025-01-29 09:34:08 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:08 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:08 INFO  BaseTest:78 - 响应时间:694ms
-2025-01-29 09:34:08 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:09 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:08 INFO  BaseTest:80 - 响应体:{"shopId":1,"shopName":null,"prodId":4919,"prodName":"真皮圆筒包","price":799.0,"content":"<p>真皮圆筒包</p>","oriPrice":999.0,"waterSoldNum":0,"totalStocks":9992870,"brief":"真皮圆筒包","video":"","pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","imgs":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","categoryId":132,"prodType":0,"scorePrice":null,"liveRoomParams":[],"skuList":[{"skuId":12351,"price":799.0,"oriPrice":999.0,"stocks":9992868,"skuName":"","skuScore":1,"pic":null,"properties":""}],"groupActivityId":0,"activityPrice":null,"startDeliveryFee":null,"deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"preSellStatus":0,"preSellTime":null}
-2025-01-29 09:34:08 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:08 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:08 INFO  BaseTest:161 - =================提取响应=================
-2025-01-29 09:34:08 INFO  BaseTest:162 - 变量名:skuId，变量值:12351
-2025-01-29 09:34:08 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:08 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:08 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/p/shopCart/changeItem
-2025-01-29 09:34:08 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:08 INFO  BaseTest:48 - 请求参数:{"basketId":0,"count":1,"prodId":"4919","shopId":1,"skuId":12351}
-2025-01-29 09:34:09 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:09 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:09 INFO  BaseTest:78 - 响应时间:621ms
-2025-01-29 09:34:09 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=157A9452CC93A1AA6AB2E558A673FA72; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=12, Date=Wed, 29 Jan 2025 09:34:10 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:09 INFO  BaseTest:80 - 响应体:添加成功
-2025-01-29 09:34:09 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:09 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:09 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:09 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:09 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/p/shopCart/info
-2025-01-29 09:34:09 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:09 INFO  BaseTest:48 - 请求参数:[]
-2025-01-29 09:34:10 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:10 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:10 INFO  BaseTest:78 - 响应时间:680ms
-2025-01-29 09:34:10 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=AA1B8A30ACF32BF79E655531E2E70249; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:10 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:10 INFO  BaseTest:80 - 响应体:[{"shopId":1,"shopName":"碧海蓝天","shopCityStatus":1,"shopCartItemDiscounts":[{"totalAmount":null,"chooseDiscountItemDto":null,"shopCartItems":[{"prodName":"真皮圆筒包","prodNameCn":"真皮圆筒包","prodNameEn":"真皮圆筒包","prodCount":1,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","price":799.0,"categoryId":null,"productTotalAmount":799.0,"prodId":4919,"skuId":12351,"skuName":"","useScore":null,"scorePrice":0,"basketId":26758,"actualTotal":null,"discountId":0,"shareReduce":0.0,"isShareReduce":null,"scorePayReduce":null,"discounts":[],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":false,"shopId":1,"shopName":"碧海蓝天","oriPrice":999.0,"distributionCardNo":null,"basketDate":"2025-01-29 17:34:11","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}]}]
-2025-01-29 09:34:10 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:10 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:10 INFO  BaseTest:161 - =================提取响应=================
-2025-01-29 09:34:10 INFO  BaseTest:162 - 变量名:basketId，变量值:26758
-2025-01-29 09:34:10 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:10 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:10 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/p/shopCart/totalPay
-2025-01-29 09:34:10 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:10 INFO  BaseTest:48 - 请求参数:[]
-2025-01-29 09:34:10 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:10 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:10 INFO  BaseTest:78 - 响应时间:690ms
-2025-01-29 09:34:10 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=7748D8BA5E57E3C81FC2FC30D6D148B7; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:11 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:10 INFO  BaseTest:80 - 响应体:{"totalMoney":0.0,"finalMoney":0.0,"subtractMoney":0.0,"count":0}
-2025-01-29 09:34:10 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:10 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:10 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:10 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:10 INFO  BaseTest:46 - 请求地址:http://shop.lemonban.com:8107/p/order/confirm
-2025-01-29 09:34:10 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:10 INFO  BaseTest:48 - 请求参数:{"addrId":0,"basketIds":[26758],"couponIds":[],"isScorePay":0,"userChangeCoupon":0,"userUseScore":0,"uuid":"50b153d8-ab9d-4ec6-91b1-1c2bc898314d"}
-2025-01-29 09:34:11 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:11 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:11 INFO  BaseTest:78 - 响应时间:707ms
-2025-01-29 09:34:11 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=987E4162937DF26686844FCDE97608FB; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:11 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:11 INFO  BaseTest:80 - 响应体:{"actualTotal":799.0,"total":799.0,"totalCount":1,"orderReduce":0.0,"scorePrice":null,"maxUsableScore":1,"totalUsableScore":0,"totalScoreAmount":0.0,"totalLevelAmount":0.0,"freeTransfee":0.0,"totalTransfee":0.0,"userAddr":{"addrId":3283,"receiver":"lemon","province":"北京市","city":"市辖区","area":"东城区","addr":"112233","mobile":"13425674455","lng":0.0,"lat":0.0,"commonAddr":1,"provinceId":11,"cityId":1101,"areaId":110101},"shopCartOrders":[{"shopId":1,"shopName":"碧海蓝天","actualTotal":799.0,"total":799.0,"totalCount":1,"transfee":0.0,"discountReduce":0.0,"couponReduce":null,"shopReduce":0.0,"remarks":null,"scoreReduce":0.0,"useScore":null,"levelReduce":0.0,"freeTransfee":0.0,"shopCartItemDiscounts":[{"totalAmount":799.0,"chooseDiscountItemDto":null,"shopCartItems":[{"prodName":"真皮圆筒包","prodNameCn":"真皮圆筒包","prodNameEn":"真皮圆筒包","prodCount":1,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","price":799.0,"categoryId":null,"productTotalAmount":799.0,"prodId":4919,"skuId":12351,"skuName":"","useScore":null,"scorePrice":0,"basketId":26758,"actualTotal":799.0,"discountId":0,"shareReduce":0.0,"isShareReduce":null,"scorePayReduce":null,"discounts":[],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":null,"shopId":1,"shopName":"碧海蓝天","oriPrice":999.0,"distributionCardNo":null,"basketDate":"2025-01-29 17:34:11","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}],"coupons":[],"shopCityStatus":1,"orderNumber":null}],"coupons":null,"isScorePay":0,"shopUseScore":100.0,"filterShopItems":[],"orderSelfStationDto":null,"orderSelfStationDtos":null,"dvyType":1,"stationId":null,"shopCityStatus":1}
-2025-01-29 09:34:11 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:11 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:11 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:11 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:11 INFO  BaseTest:46 - 请求地址:http://mall.lemonban.com:8107/p/order/submit
-2025-01-29 09:34:11 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:11 INFO  BaseTest:48 - 请求参数:{"orderShopParam":[{"remarks":"","shopId":1}],"uuid":"5df403a8-214b-4cac-a8a3-6d102b421389"}
-2025-01-29 09:34:12 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:12 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:12 INFO  BaseTest:78 - 响应时间:1111ms
-2025-01-29 09:34:12 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=19E3548E521529D16034E2244E6A0842; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:13 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:12 INFO  BaseTest:80 - 响应体:{"orderNumbers":"1884535512296067072","duplicateError":null}
-2025-01-29 09:34:12 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:12 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:12 INFO  BaseTest:161 - =================提取响应=================
-2025-01-29 09:34:12 INFO  BaseTest:162 - 变量名:orderNumbers，变量值:1884535512296067072
-2025-01-29 09:34:12 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:12 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:12 INFO  BaseTest:46 - 请求地址:http://mall.lemonban.com:8107/p/order/pay
-2025-01-29 09:34:12 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:12 INFO  BaseTest:48 - 请求参数:{"payType":3,"orderNumbers":"1884535512296067072"}
-2025-01-29 09:34:13 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:13 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:13 INFO  BaseTest:78 - 响应时间:1014ms
-2025-01-29 09:34:13 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=CFE54E5252B91F2470D8B4BAC8DC2BC7; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=37, Date=Wed, 29 Jan 2025 09:34:14 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:13 INFO  BaseTest:80 - 响应体:weixin://wxpay/bizpayurl?pr=RGzs8zXz3
-2025-01-29 09:34:13 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:13 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:13 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:13 INFO  BaseTest:45 - 请求方法:post
-2025-01-29 09:34:13 INFO  BaseTest:46 - 请求地址:http://mall.lemonban.com:8107/notice/pay/3
-2025-01-29 09:34:13 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:13 INFO  BaseTest:48 - 请求参数:{"payNo":"1884535512296067072","bizPayNo":"XXXX","isPaySuccess":true}
-2025-01-29 09:34:14 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:14 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:14 INFO  BaseTest:78 - 响应时间:775ms
-2025-01-29 09:34:14 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=D3F523A4FB4D2A483AA4BAF81129469E; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=7, Date=Wed, 29 Jan 2025 09:34:14 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:14 INFO  BaseTest:80 - 响应体:success
-2025-01-29 09:34:14 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:14 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
-2025-01-29 09:34:14 INFO  BaseTest:44 - =================请求信息=================
-2025-01-29 09:34:14 INFO  BaseTest:45 - 请求方法:get
-2025-01-29 09:34:14 INFO  BaseTest:46 - 请求地址:http://mall.lemonban.com:8107/p/order/isPay/1884535512296067072
-2025-01-29 09:34:14 INFO  BaseTest:47 - 请求头:{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer95506c06-5d6c-4c2d-bd9c-e86718b987c6"}
-2025-01-29 09:34:14 INFO  BaseTest:48 - 请求参数:null
-2025-01-29 09:34:15 INFO  BaseTest:76 - =================响应信息=================
-2025-01-29 09:34:15 INFO  BaseTest:77 - 响应状态码:200
-2025-01-29 09:34:15 INFO  BaseTest:78 - 响应时间:593ms
-2025-01-29 09:34:15 INFO  BaseTest:79 - 响应头:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=58C8DE5921C5DE2AD40C55D6B44F33C5; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Wed, 29 Jan 2025 09:34:16 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
-2025-01-29 09:34:15 INFO  BaseTest:80 - 响应体:false
-2025-01-29 09:34:15 INFO  BaseTest:99 - =================断言信息=================
-2025-01-29 09:34:15 INFO  BaseTest:106 - http响应状态码断言，实际值【200】期望值【200】
+2025-01-30 14:29:34 INFO  BaseTest:44 - =================请求信息Request_information=================
+2025-01-30 14:29:34 INFO  BaseTest:45 - 请求方法Request_Method:post
+2025-01-30 14:29:34 INFO  BaseTest:46 - 请求地址Request_URL:http://shop.lemonban.com:8107/login
+2025-01-30 14:29:34 INFO  BaseTest:47 - 请求头:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-01-30 14:29:34 INFO  BaseTest:48 - 请求参数:Request_Parameters{"principal":"lemon70","credentials":"12345678","appType":3,"loginType":0}
+2025-01-30 14:29:36 INFO  BaseTest:75 - =================响应信息Response Info =================
+2025-01-30 14:29:36 INFO  BaseTest:76 - 响应状态码Status Code:200
+2025-01-30 14:29:36 INFO  BaseTest:77 - 响应时间Response Time:1378ms
+2025-01-30 14:29:36 INFO  BaseTest:78 - 响应头Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Set-Cookie=JSESSIONID=3677FFF22BE48FFD6EBCBC10E8A5651C; Path=/; HttpOnly, Content-Type=application/json;charset=UTF-8, Content-Length=316, Date=Thu, 30 Jan 2025 14:29:37 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-01-30 14:29:36 INFO  BaseTest:79 - 响应体Response Body:{"access_token":"2c36ccc3-3172-4d67-a9d4-f1a8710b5e85","token_type":"bearer","refresh_token":"643712ca-291e-4c38-967d-58a57ae33dbb","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2025/01/c2f665d3ea70466b94c9c776a49345ab.png","userId":"6e82d8331fd74e5eb38a8524bea3a2fc","nickName":"lemon70","enabled":true}
+2025-01-30 14:29:36 INFO  BaseTest:97 - =================断言信息 Response Assertion Info=================
+2025-01-30 14:29:36 INFO  BaseTest:104 - http status code assertion:  实际值actual value: 【200】expected value : 期望值【200】
+2025-01-30 14:29:36 INFO  BaseTest:117 - 响应字段断言，提取响应字段【nickName】实际值【lemon70】期望值【lemon70】
+2025-01-30 14:29:36 INFO  BaseTest:117 - 响应字段断言，提取响应字段【enabled】实际值【true】期望值【true】
+2025-01-30 14:29:36 INFO  BaseTest:165 - =================提取响应Response Extraction=================
+2025-01-30 14:29:36 INFO  BaseTest:166 - 变量名Variable_Key:token，变量值Variable_Value:2c36ccc3-3172-4d67-a9d4-f1a8710b5e85
+2025-01-30 14:29:36 INFO  BaseTest:209 - ===========Replacement Info==========
+2025-01-30 14:29:36 INFO  BaseTest:210 - {{token}}is being replaced to :2c36ccc3-3172-4d67-a9d4-f1a8710b5e85
+2025-01-30 14:29:36 INFO  BaseTest:211 - Data after replacement is  :{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85"
+}
+2025-01-30 14:29:36 INFO  BaseTest:44 - =================请求信息Request_information=================
+2025-01-30 14:29:36 INFO  BaseTest:45 - 请求方法Request_Method:get
+2025-01-30 14:29:36 INFO  BaseTest:46 - 请求地址Request_URL:http://shop.lemonban.com:8107/p/user/centerInfo
+2025-01-30 14:29:36 INFO  BaseTest:47 - 请求头:Request_Headers{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85"
+}
+2025-01-30 14:29:36 INFO  BaseTest:48 - 请求参数:Request_Parameters[]
+2025-01-30 14:29:37 INFO  BaseTest:75 - =================响应信息Response Info =================
+2025-01-30 14:29:37 INFO  BaseTest:76 - 响应状态码Status Code:404
+2025-01-30 14:29:37 INFO  BaseTest:77 - 响应时间Response Time:659ms
+2025-01-30 14:29:37 INFO  BaseTest:78 - 响应头Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=F5E65BF8650DDA6AF6A859FE29E96DB6; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Thu, 30 Jan 2025 14:29:38 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-01-30 14:29:37 INFO  BaseTest:79 - 响应体Response Body:{"timestamp":"2025-01-30 22:29:38","status":404,"error":"Not Found","message":"","path":"/p/user/centerInfo%5B%5D"}
+2025-01-30 14:29:37 INFO  BaseTest:97 - =================断言信息 Response Assertion Info=================
+2025-01-30 14:29:37 INFO  BaseTest:104 - http status code assertion:  实际值actual value: 【404】expected value : 期望值【200】
+2025-01-30 14:29:37 INFO  BaseTest:209 - ===========Replacement Info==========
+2025-01-30 14:29:37 INFO  BaseTest:210 - {{token}}is being replaced to :2c36ccc3-3172-4d67-a9d4-f1a8710b5e85
+2025-01-30 14:29:37 INFO  BaseTest:211 - Data after replacement is  :{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85","Content-Type":"multipart/form-data"
+}
+2025-01-30 14:29:37 INFO  BaseTest:44 - =================请求信息Request_information=================
+2025-01-30 14:29:37 INFO  BaseTest:45 - 请求方法Request_Method:post
+2025-01-30 14:29:37 INFO  BaseTest:46 - 请求地址Request_URL:http://shop.lemonban.com:8107/p/file/upload
+2025-01-30 14:29:37 INFO  BaseTest:47 - 请求头:Request_Headers{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85","Content-Type":"multipart/form-data"
+}
+2025-01-30 14:29:37 INFO  BaseTest:48 - 请求参数:Request_Parameterssrc/test/resources/lemon_photo.png
+2025-01-30 14:29:38 INFO  BaseTest:75 - =================响应信息Response Info =================
+2025-01-30 14:29:38 INFO  BaseTest:76 - 响应状态码Status Code:200
+2025-01-30 14:29:38 INFO  BaseTest:77 - 响应时间Response Time:670ms
+2025-01-30 14:29:38 INFO  BaseTest:78 - 响应头Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=0EF41A7EC7341E1B8D6CC1FA8C2B352C; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Thu, 30 Jan 2025 14:29:38 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-01-30 14:29:38 INFO  BaseTest:79 - 响应体Response Body:{"resourcesUrl":"http://shop.lemonban.com:8108/","filePath":"2025/01/7ad47fe35dd34e58b7d13a890acef22a.png"}
+2025-01-30 14:29:38 INFO  BaseTest:97 - =================断言信息 Response Assertion Info=================
+2025-01-30 14:29:38 INFO  BaseTest:104 - http status code assertion:  实际值actual value: 【200】expected value : 期望值【200】
+2025-01-30 14:29:38 INFO  BaseTest:165 - =================提取响应Response Extraction=================
+2025-01-30 14:29:38 INFO  BaseTest:166 - 变量名Variable_Key:filePath，变量值Variable_Value:2025/01/7ad47fe35dd34e58b7d13a890acef22a.png
+2025-01-30 14:29:38 INFO  BaseTest:165 - =================提取响应Response Extraction=================
+2025-01-30 14:29:38 INFO  BaseTest:166 - 变量名Variable_Key:resourcesUrl，变量值Variable_Value:http://shop.lemonban.com:8108/
+2025-01-30 14:29:38 INFO  BaseTest:209 - ===========Replacement Info==========
+2025-01-30 14:29:38 INFO  BaseTest:210 - {{token}}is being replaced to :2c36ccc3-3172-4d67-a9d4-f1a8710b5e85
+2025-01-30 14:29:38 INFO  BaseTest:211 - Data after replacement is  :{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85","Content-Type":"application/json; charset=UTF-8"
+}
+2025-01-30 14:29:38 INFO  BaseTest:209 - ===========Replacement Info==========
+2025-01-30 14:29:38 INFO  BaseTest:210 - {{resourcesUrl}}is being replaced to :http://shop.lemonban.com:8108/
+2025-01-30 14:29:38 INFO  BaseTest:211 - Data after replacement is  :{"avatarUrl":"http://shop.lemonban.com:8108/{{filePath}}","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-01-30 14:29:38 INFO  BaseTest:209 - ===========Replacement Info==========
+2025-01-30 14:29:38 INFO  BaseTest:210 - {{filePath}}is being replaced to :2025/01/7ad47fe35dd34e58b7d13a890acef22a.png
+2025-01-30 14:29:38 INFO  BaseTest:211 - Data after replacement is  :{"avatarUrl":"http://shop.lemonban.com:8108/2025/01/7ad47fe35dd34e58b7d13a890acef22a.png","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-01-30 14:29:38 INFO  BaseTest:44 - =================请求信息Request_information=================
+2025-01-30 14:29:38 INFO  BaseTest:45 - 请求方法Request_Method:put
+2025-01-30 14:29:38 INFO  BaseTest:46 - 请求地址Request_URL:http://shop.lemonban.com:8107/p/user/setUserInfo
+2025-01-30 14:29:38 INFO  BaseTest:47 - 请求头:Request_Headers{"Authorization": "bearer 2c36ccc3-3172-4d67-a9d4-f1a8710b5e85","Content-Type":"application/json; charset=UTF-8"
+}
+2025-01-30 14:29:38 INFO  BaseTest:48 - 请求参数:Request_Parameters{"avatarUrl":"http://shop.lemonban.com:8108/2025/01/7ad47fe35dd34e58b7d13a890acef22a.png","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-01-30 14:29:38 INFO  BaseTest:75 - =================响应信息Response Info =================
+2025-01-30 14:29:38 INFO  BaseTest:76 - 响应状态码Status Code:200
+2025-01-30 14:29:38 INFO  BaseTest:77 - 响应时间Response Time:626ms
+2025-01-30 14:29:38 INFO  BaseTest:78 - 响应头Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=2444E23280CA56A9CA71F70054FE2E90; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Length=0, Date=Thu, 30 Jan 2025 14:29:39 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-01-30 14:29:38 INFO  BaseTest:79 - 响应体Response Body:
+2025-01-30 14:29:38 INFO  BaseTest:97 - =================断言信息 Response Assertion Info=================
+2025-01-30 14:29:38 INFO  BaseTest:104 - http status code assertion:  实际值actual value: 【200】expected value : 期望值【200】

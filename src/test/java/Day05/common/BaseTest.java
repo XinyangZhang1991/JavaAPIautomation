@@ -41,11 +41,11 @@ public class BaseTest {
         postsql = replaceParam(postsql);
         db_assertion=replaceParam(db_assertion);
         //
-        logger.info("=================请求信息=================");
-        logger.info("请求方法:" + method);
-        logger.info("请求地址:" + url);
-        logger.info("请求头:" + headers);
-        logger.info("请求参数:" + params);
+        logger.info("=================请求信息Request_information=================");
+        logger.info("请求方法Request_Method:" + method);
+        logger.info("请求地址Request_URL:" + url);
+        logger.info("请求头:Request_Headers" + headers);
+        logger.info("请求参数:Request_Parameters" + params);
         //RequestSpecification --
         //Step 1 : setting the request header
         RequestSpecification req = given();
@@ -60,7 +60,6 @@ public class BaseTest {
             res = req.get(url + params).then().log().all().extract().response();
         } else if (method.equalsIgnoreCase("post")) {
             //执行post请求
-            //TODO 考虑到文件上传的请求
             if(headers.contains("multipart/form-data")){
                 res = req.multiPart(new File(params)).post(url).then().extract().response();
             }else {
@@ -73,21 +72,20 @@ public class BaseTest {
             //执行delete请求
             res = req.delete(url + params).then().log().all().extract().response();
         }
-        logger.info("=================响应信息=================");
-        logger.info("响应状态码:" + res.getStatusCode());
-        logger.info("响应时间:" + res.getTime() + "ms");
-        logger.info("响应头:" + res.getHeaders().asList());
-        logger.info("响应体:" + res.getBody().asString());
+        logger.info("=================响应信息Response Info =================");
+        logger.info("响应状态码Status Code:" + res.getStatusCode());
+        logger.info("响应时间Response Time:" + res.getTime() + "ms");
+        logger.info("响应头Response Header:" + res.getHeaders().asList());
+        logger.info("响应体Response Body:" + res.getBody().asString());
         //Step 3 做断言
         assertResponse(res,caseData.getExpected());
         //响应提取
         extractResponse(res,caseData.getExtractedResponse());
         extractSQL (postsql);
-        //assertSQL(assertsql);
+        assertSQL(db_assertion);
         return res;
     }
 
-    //public void assertSQL();
 
     public void assertResponse(Response res,String expected){
         //先判空，如果是excel表中的expected是空的， 那么整个断言方法就不需要再执行了
@@ -96,20 +94,20 @@ public class BaseTest {
             HashMap<String, Object> expectedMap = jsonToMap(expected);
             //遍历map
             Set<String> keys = expectedMap.keySet(); //先拿到Excel表里面所有的Key值
-            logger.info("=================断言信息=================");
+            logger.info("=================断言信息 Response Assertion Info=================");
             for (String key : keys) {
                 //1、响应状态码-key为statuscode 2、响应体字符串断言-key为bodystr 3、JSON响应体字段断言
                 if (key.equals("statuscode")) {
                     //拿到实际的响应状态码
                     int actualValue = res.getStatusCode();
                     Object expectedValue = expectedMap.get(key);
-                    logger.info("http响应状态码断言，实际值【" + actualValue + "】期望值【" + expectedValue + "】");
+                    logger.info("http status code assertion:  实际值actual value: 【" + actualValue + "】expected value : 期望值【" + expectedValue + "】");
                     Assert.assertEquals(actualValue, expectedValue);
                 } else if (key.equals("bodystring")) {
                     //获取实际的接口响应体字符串文本数据
                     String actualValue = res.body().asString();
                     Object expectedValue = expectedMap.get(key);
-                    logger.info("响应体文本断言，实际值【" + actualValue + "】期望值【" + expectedValue + "】");
+                    logger.info("http response body string assertion: 实际值【" + actualValue + "】期望值【" + expectedValue + "】");
                     Assert.assertEquals(actualValue, expectedValue);
                 } else {
                     //此时是响应体字段断言，对应的key是Gpath提取字段表达式
@@ -132,14 +130,14 @@ public class BaseTest {
         if(assertSql != null){
             HashMap<String,Object> assertSqlMap = jsonToMap(assertSql);
             Set<String> keys = assertSqlMap.keySet();
-            logger.info("=================数据库断言=================");
+            logger.info("=================数据库断言DB assertion=================");
             for(String key : keys){
                 //key为要执行的SQL语句
                 //value期望值
                 Object value = assertSqlMap.get(key);
                 Object result = JDBCUtil.querySingleData(key);
-                logger.info("执行的SQL语句:"+key);
-                logger.info("期望值:"+value+"，实际值:"+result);
+                logger.info("执行的SQL语句SQLQuery is :"+key);
+                logger.info("期望值 expected value :"+value+"，实际值 actual value:"+result);
                 //类型不一致的解决思路：让两者类型统一：中间角色-String
                 Assert.assertEquals(result+"",value+"");
             }
@@ -155,11 +153,17 @@ public class BaseTest {
             for (String key : keys) {
                 //key:变量名  value:提取表达式
                 Object value = extractMap.get(key);
-                //拿到对应字段值, 字段值已经在eXCel表中设计好了， 是能够用JSONPATH取到响应体中所需字段位置的表达式
-                Object result = res.jsonPath().get(value + "");
+                //
+                Object result =null;
+                if (value.equals("bodystr")){
+                    result=res.body().asString();
+                }
+                else {
+                    result = res.jsonPath().get(value + "");
+                }
                 //将变量名以及对应的字段值存储到环境变量区域中
-                logger.info("=================提取响应=================");
-                logger.info("变量名:"+key+"，变量值:"+result);
+                logger.info("=================提取响应Response Extraction=================");
+                logger.info("变量名Variable_Key:"+key+"，变量值Variable_Value:"+result);
                 Environment.env.put(key, result);
             }
         }
@@ -170,15 +174,15 @@ public class BaseTest {
         if(sqlInfo != null){
             HashMap<String,Object> sqlMap = jsonToMap(sqlInfo);
             Set<String> keys = sqlMap.keySet();
-            logger.info("===========执行后置SQL==========");
+            logger.info("===========执行后置 PostSQL execution==========");
             for (String key: keys){
                 String sql = (String) sqlMap.get(key);
                 //执行sql - Java代码
                 Object result = JDBCUtil.querySingleData(sql);
                 //保存到环境变量中
                 Environment.env.put(key,result);
-                logger.info("执行的后置SQL语句是:"+sql);
-                logger.info("得到的值是:"+result);
+                logger.info("SQLQuery is :"+sql);
+                logger.info("Value received from SQL:"+result);
             }
         }
     }
@@ -189,6 +193,7 @@ public class BaseTest {
     public String replaceParam(String str){
         if(str != null) {
             //1、需要通过正则表达式来识别标记{{XXX}}
+
             Pattern pattern = Pattern.compile("\\{\\{(.*?)\\}\\}");
             Matcher matcher = pattern.matcher(str);
             while (matcher.find()) {
@@ -201,6 +206,10 @@ public class BaseTest {
                 //3、将字串subStr替换为上述的值
                 //value + "" 通过拼接转化为字符串
                 str = str.replace(subStr, value + "");
+                logger.info("===========Replacement Info==========");
+                logger.info(subStr+ "is being replaced to :"+value);
+                logger.info("Data after replacement is  :"+str);
+
             }
             return str;
         }

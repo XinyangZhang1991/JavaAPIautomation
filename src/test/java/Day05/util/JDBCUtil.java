@@ -17,7 +17,7 @@ public class JDBCUtil {
      * 去连接数据库
      */
     public static Connection getConnection(){
-        String url="jdbc:mysql://47.113.180.81/yami_shops?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+        String url="jdbc:mysql://shop.lemonban.com:3306/yami_shops?useUnicode=true&characterEncoding=utf-8&useSSL=false";
         String user="lemon_auto";
         String password="lemon!@123";
         //conn数据库连接对象

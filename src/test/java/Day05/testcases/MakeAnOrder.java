@@ -7,7 +7,7 @@ import Day05.util.ExcelUtil;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class SearchTest extends BaseTest {
+public class MakeAnOrder extends BaseTest {
 
     @DataProvider
     public Object[] getExcelData() {
