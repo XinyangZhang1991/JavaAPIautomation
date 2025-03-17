@@ -1,0 +1,418 @@
+2025-03-17 17:16:53 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:16:53 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:16:53 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/login
+2025-03-17 17:16:53 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:16:53 INFO  BaseTest:47 - ????:Request_Parameters{"principal":"lemon70","credentials":"12345678","appType":3,"loginType":0}
+2025-03-17 17:16:57 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:16:57 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:16:57 INFO  BaseTest:76 - ????Response Time:2874ms
+2025-03-17 17:16:57 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Set-Cookie=JSESSIONID=5C434AD45B107D50BC27D87D3051A598; Path=/; HttpOnly, Content-Type=application/json;charset=UTF-8, Content-Length=316, Date=Mon, 17 Mar 2025 17:16:58 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:16:57 INFO  BaseTest:78 - ???Response Body:{"access_token":"d8c8be4e-5172-4563-82dd-c815ce59920d","token_type":"bearer","refresh_token":"a0036e1b-50f3-4e08-9630-1140650bc956","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2025/03/b9ffae0784de4b46baf187bc3c013b7a.png","userId":"6e82d8331fd74e5eb38a8524bea3a2fc","nickName":"lemon70","enabled":true}
+2025-03-17 17:16:57 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:16:57 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:16:58 INFO  BaseTest:116 - ??????????????nickName?????lemon70?????lemon70?
+2025-03-17 17:16:58 INFO  BaseTest:116 - ??????????????enabled?????true?????true?
+2025-03-17 17:16:58 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:16:58 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:16:58 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/login
+2025-03-17 17:16:58 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:16:58 INFO  BaseTest:47 - ????:Request_Parameters{"principal":"lemon70","credentials":"12345","appType":3,"loginType":0}
+2025-03-17 17:16:59 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:16:59 INFO  BaseTest:75 - ?????Status Code:400
+2025-03-17 17:16:59 INFO  BaseTest:76 - ????Response Time:1070ms
+2025-03-17 17:16:59 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json;charset=UTF-8, Content-Length=24, Date=Mon, 17 Mar 2025 17:17:00 GMT, Connection=close]
+2025-03-17 17:16:59 INFO  BaseTest:78 - ???Response Body:????????
+2025-03-17 17:16:59 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:16:59 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?400?expected value : ????400?
+2025-03-17 17:16:59 INFO  BaseTest:109 - http response body string assertion: ??????????????????????????
+2025-03-17 17:16:59 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:16:59 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:16:59 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/login
+2025-03-17 17:16:59 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:16:59 INFO  BaseTest:47 - ????:Request_Parameters{"principal":"lemonxinyang","credentials":"Ginny_1212","appType":3,"loginType":0}
+2025-03-17 17:17:00 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:00 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:00 INFO  BaseTest:76 - ????Response Time:911ms
+2025-03-17 17:17:00 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Set-Cookie=JSESSIONID=4B939457927CC541830418824AA62DBB; Path=/; HttpOnly, Content-Type=application/json;charset=UTF-8, Content-Length=249, Date=Mon, 17 Mar 2025 17:17:01 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:00 INFO  BaseTest:78 - ???Response Body:{"access_token":"1e3f84a2-8fca-498f-a48a-bffc4864b5fa","token_type":"bearer","refresh_token":"716db327-ef4c-4ac8-9e39-b5c16741857a","expires_in":1295999,"pic":null,"userId":"eac4c99d58fe40cea6323046b430f73d","nickName":"lemonxinyang","enabled":true}
+2025-03-17 17:17:00 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:00 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:00 INFO  BaseTest:116 - ??????????????nickName?????lemonxinyang?????lemonxinyang?
+2025-03-17 17:17:00 INFO  BaseTest:116 - ??????????????enabled?????true?????true?
+2025-03-17 17:17:00 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:00 INFO  BaseTest:165 - ???Variable_Key:token????Variable_Value:1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:00 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:00 INFO  BaseTest:44 - ????Request_Method:get
+2025-03-17 17:17:00 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/search/searchProdPage
+2025-03-17 17:17:00 INFO  BaseTest:46 - ???:Request_Headersnull
+2025-03-17 17:17:00 INFO  BaseTest:47 - ????:Request_Parameters?prodName=?????
+2025-03-17 17:17:01 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:01 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:01 INFO  BaseTest:76 - ????Response Time:723ms
+2025-03-17 17:17:01 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:01 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:01 INFO  BaseTest:78 - ???Response Body:{"records":[{"prodId":4919,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","prodName":"?????","price":799.0,"prodCommNumber":0,"positiveRating":0.0,"praiseNumber":0}],"total":1,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"hitCount":false,"countId":null,"maxLimit":null,"searchCount":true,"pages":1}
+2025-03-17 17:17:01 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:01 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:01 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:01 INFO  BaseTest:165 - ???Variable_Key:prodId????Variable_Value:4919
+2025-03-17 17:17:01 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:01 INFO  BaseTest:209 - {{prodId}}is being replaced to :4919
+2025-03-17 17:17:01 INFO  BaseTest:210 - Data after replacement is  :?prodId=4919
+2025-03-17 17:17:01 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:01 INFO  BaseTest:44 - ????Request_Method:get
+2025-03-17 17:17:01 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/prod/prodInfo
+2025-03-17 17:17:01 INFO  BaseTest:46 - ???:Request_Headersnull
+2025-03-17 17:17:01 INFO  BaseTest:47 - ????:Request_Parameters?prodId=4919
+2025-03-17 17:17:04 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:04 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:04 INFO  BaseTest:76 - ????Response Time:3080ms
+2025-03-17 17:17:04 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:03 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:04 INFO  BaseTest:78 - ???Response Body:{"shopId":1,"shopName":null,"prodId":4919,"prodName":"?????","price":799.0,"content":"<p>?????</p>","oriPrice":999.0,"waterSoldNum":0,"totalStocks":9987156,"brief":"?????","video":"","pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","imgs":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","categoryId":132,"prodType":0,"scorePrice":null,"liveRoomParams":[],"skuList":[{"skuId":12351,"price":799.0,"oriPrice":999.0,"stocks":9987150,"skuName":"","skuScore":1,"pic":null,"properties":""}],"groupActivityId":0,"activityPrice":null,"startDeliveryFee":null,"deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"preSellStatus":0,"preSellTime":null}
+2025-03-17 17:17:04 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:04 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:04 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:04 INFO  BaseTest:165 - ???Variable_Key:skuId????Variable_Value:12351
+2025-03-17 17:17:04 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:04 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:04 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:04 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:04 INFO  BaseTest:209 - {{prodId}}is being replaced to :4919
+2025-03-17 17:17:04 INFO  BaseTest:210 - Data after replacement is  :{"basketId":0,"count":1,"prodId":"4919","shopId":1,"skuId":{{skuId}}}
+2025-03-17 17:17:04 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:04 INFO  BaseTest:209 - {{skuId}}is being replaced to :12351
+2025-03-17 17:17:04 INFO  BaseTest:210 - Data after replacement is  :{"basketId":0,"count":1,"prodId":"4919","shopId":1,"skuId":12351}
+2025-03-17 17:17:04 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:04 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:04 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/shopCart/changeItem
+2025-03-17 17:17:04 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:04 INFO  BaseTest:47 - ????:Request_Parameters{"basketId":0,"count":1,"prodId":"4919","shopId":1,"skuId":12351}
+2025-03-17 17:17:05 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:05 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:05 INFO  BaseTest:76 - ????Response Time:780ms
+2025-03-17 17:17:05 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=47059B1145721C9969BF843D68EDCB1F; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=12, Date=Mon, 17 Mar 2025 17:17:06 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:05 INFO  BaseTest:78 - ???Response Body:????
+2025-03-17 17:17:05 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:05 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:05 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:05 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:05 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:05 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:05 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:05 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/shopCart/info
+2025-03-17 17:17:05 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:05 INFO  BaseTest:47 - ????:Request_Parameters[]
+2025-03-17 17:17:06 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:06 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:06 INFO  BaseTest:76 - ????Response Time:797ms
+2025-03-17 17:17:06 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=F15DA21C1B67B180693737BB1F9B8147; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:06 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:06 INFO  BaseTest:78 - ???Response Body:[{"shopId":1,"shopName":"????","shopCityStatus":1,"shopCartItemDiscounts":[{"totalAmount":null,"chooseDiscountItemDto":null,"shopCartItems":[{"prodName":"?????","prodNameCn":"?????","prodNameEn":"?????","prodCount":1,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","price":799.0,"categoryId":null,"productTotalAmount":799.0,"prodId":4919,"skuId":12351,"skuName":"","useScore":null,"scorePrice":0,"basketId":29599,"actualTotal":null,"discountId":0,"shareReduce":0.0,"isShareReduce":null,"scorePayReduce":null,"discounts":[],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":false,"shopId":1,"shopName":"????","oriPrice":999.0,"distributionCardNo":null,"basketDate":"2025-03-18 01:17:06","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}]}]
+2025-03-17 17:17:06 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:06 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:06 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:06 INFO  BaseTest:165 - ???Variable_Key:basketId????Variable_Value:29599
+2025-03-17 17:17:06 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:06 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:06 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:06 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:06 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:06 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/shopCart/totalPay
+2025-03-17 17:17:06 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:06 INFO  BaseTest:47 - ????:Request_Parameters[]
+2025-03-17 17:17:06 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:06 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:06 INFO  BaseTest:76 - ????Response Time:758ms
+2025-03-17 17:17:06 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=14C0800610D56C3CEE2B294C42CA67F4; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:07 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:06 INFO  BaseTest:78 - ???Response Body:{"totalMoney":0.0,"finalMoney":0.0,"subtractMoney":0.0,"count":0}
+2025-03-17 17:17:06 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:06 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:06 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:06 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:06 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:06 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:06 INFO  BaseTest:209 - {{basketId}}is being replaced to :29599
+2025-03-17 17:17:06 INFO  BaseTest:210 - Data after replacement is  :{"addrId":0,"basketIds":[29599],"couponIds":[],"isScorePay":0,"userChangeCoupon":0,"userUseScore":0,"uuid":"50b153d8-ab9d-4ec6-91b1-1c2bc898314d"}
+2025-03-17 17:17:06 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:06 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:06 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/order/confirm
+2025-03-17 17:17:06 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:06 INFO  BaseTest:47 - ????:Request_Parameters{"addrId":0,"basketIds":[29599],"couponIds":[],"isScorePay":0,"userChangeCoupon":0,"userUseScore":0,"uuid":"50b153d8-ab9d-4ec6-91b1-1c2bc898314d"}
+2025-03-17 17:17:07 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:07 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:07 INFO  BaseTest:76 - ????Response Time:727ms
+2025-03-17 17:17:07 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=B43B0FD6E48A9F9535549861109324F8; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:07 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:07 INFO  BaseTest:78 - ???Response Body:{"actualTotal":799.0,"total":799.0,"totalCount":1,"orderReduce":0.0,"scorePrice":null,"maxUsableScore":1,"totalUsableScore":0,"totalScoreAmount":0.0,"totalLevelAmount":0.0,"freeTransfee":0.0,"totalTransfee":0.0,"userAddr":{"addrId":3436,"receiver":"??","province":"???","city":"???","area":"???","addr":"?????","mobile":"13581759571","lng":0.0,"lat":0.0,"commonAddr":1,"provinceId":11,"cityId":1101,"areaId":110101},"shopCartOrders":[{"shopId":1,"shopName":"????","actualTotal":799.0,"total":799.0,"totalCount":1,"transfee":0.0,"discountReduce":0.0,"couponReduce":null,"shopReduce":0.0,"remarks":null,"scoreReduce":0.0,"useScore":null,"levelReduce":0.0,"freeTransfee":0.0,"shopCartItemDiscounts":[{"totalAmount":799.0,"chooseDiscountItemDto":null,"shopCartItems":[{"prodName":"?????","prodNameCn":"?????","prodNameEn":"?????","prodCount":1,"pic":"http://shop.lemonban.com:8108/2024/11/66c47323cb1c4f0f892560d64da7b084.png","price":799.0,"categoryId":null,"productTotalAmount":799.0,"prodId":4919,"skuId":12351,"skuName":"","useScore":null,"scorePrice":0,"basketId":29599,"actualTotal":799.0,"discountId":0,"shareReduce":0.0,"isShareReduce":null,"scorePayReduce":null,"discounts":[],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":null,"shopId":1,"shopName":"????","oriPrice":999.0,"distributionCardNo":null,"basketDate":"2025-03-18 01:17:06","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}],"coupons":[],"shopCityStatus":1,"orderNumber":null}],"coupons":null,"isScorePay":0,"shopUseScore":100.0,"filterShopItems":[],"orderSelfStationDto":null,"orderSelfStationDtos":null,"dvyType":1,"stationId":null,"shopCityStatus":1}
+2025-03-17 17:17:07 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:07 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:07 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:07 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:07 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:07 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:07 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:07 INFO  BaseTest:45 - ????Request_URL:http://mall.lemonban.com:8107/p/order/submit
+2025-03-17 17:17:07 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:07 INFO  BaseTest:47 - ????:Request_Parameters{"orderShopParam":[{"remarks":"","shopId":1}],"uuid":"5df403a8-214b-4cac-a8a3-6d102b421389"}
+2025-03-17 17:17:09 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:09 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:09 INFO  BaseTest:76 - ????Response Time:1916ms
+2025-03-17 17:17:09 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=4F16A0767885D165D2C58BF2259BA6D3; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:10 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:09 INFO  BaseTest:78 - ???Response Body:{"orderNumbers":"1901684246184202240","duplicateError":null}
+2025-03-17 17:17:09 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:09 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:09 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:09 INFO  BaseTest:165 - ???Variable_Key:orderNumbers????Variable_Value:1901684246184202240
+2025-03-17 17:17:09 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:09 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:09 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:09 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:09 INFO  BaseTest:209 - {{orderNumbers}}is being replaced to :1901684246184202240
+2025-03-17 17:17:09 INFO  BaseTest:210 - Data after replacement is  :{"payType":3,"orderNumbers":"1901684246184202240"}
+2025-03-17 17:17:09 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:09 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:09 INFO  BaseTest:45 - ????Request_URL:http://mall.lemonban.com:8107/p/order/pay
+2025-03-17 17:17:09 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:09 INFO  BaseTest:47 - ????:Request_Parameters{"payType":3,"orderNumbers":"1901684246184202240"}
+2025-03-17 17:17:11 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:11 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:11 INFO  BaseTest:76 - ????Response Time:2106ms
+2025-03-17 17:17:11 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=1950C8B85D70B49F506DA185B3E4E8FE; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=37, Date=Mon, 17 Mar 2025 17:17:11 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:11 INFO  BaseTest:78 - ???Response Body:weixin://wxpay/bizpayurl?pr=hl8Mn71z1
+2025-03-17 17:17:11 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:11 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:11 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:11 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:11 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:11 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:11 INFO  BaseTest:209 - {{orderNumbers}}is being replaced to :1901684246184202240
+2025-03-17 17:17:11 INFO  BaseTest:210 - Data after replacement is  :{"payNo":"1901684246184202240","bizPayNo":"XXXX","isPaySuccess":true}
+2025-03-17 17:17:11 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:11 INFO  BaseTest:209 - {{orderNumbers}}is being replaced to :1901684246184202240
+2025-03-17 17:17:11 INFO  BaseTest:210 - Data after replacement is  :{"SELECT COUNT(*) FROM tz_order WHERE order_number = '1901684246184202240';":1}
+2025-03-17 17:17:11 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:11 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:11 INFO  BaseTest:45 - ????Request_URL:http://mall.lemonban.com:8107/notice/pay/3
+2025-03-17 17:17:11 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:11 INFO  BaseTest:47 - ????:Request_Parameters{"payNo":"1901684246184202240","bizPayNo":"XXXX","isPaySuccess":true}
+2025-03-17 17:17:12 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:12 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:12 INFO  BaseTest:76 - ????Response Time:894ms
+2025-03-17 17:17:12 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=C3217E45D2852802CFC0496754A101DD; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=7, Date=Mon, 17 Mar 2025 17:17:13 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:12 INFO  BaseTest:78 - ???Response Body:success
+2025-03-17 17:17:12 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:12 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:12 INFO  BaseTest:132 - =================?????DB assertion=================
+2025-03-17 17:17:23 INFO  BaseTest:138 - ???SQL??SQLQuery is :SELECT COUNT(*) FROM tz_order WHERE order_number = '1901684246184202240';
+2025-03-17 17:17:23 INFO  BaseTest:139 - ??? expected value :1???? actual value:1
+2025-03-17 17:17:23 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:23 INFO  BaseTest:209 - {{token}}is being replaced to :1e3f84a2-8fca-498f-a48a-bffc4864b5fa
+2025-03-17 17:17:23 INFO  BaseTest:210 - Data after replacement is  :{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:23 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:23 INFO  BaseTest:209 - {{orderNumbers}}is being replaced to :1901684246184202240
+2025-03-17 17:17:23 INFO  BaseTest:210 - Data after replacement is  :http://mall.lemonban.com:8107/p/order/isPay/1901684246184202240
+2025-03-17 17:17:23 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:23 INFO  BaseTest:44 - ????Request_Method:get
+2025-03-17 17:17:23 INFO  BaseTest:45 - ????Request_URL:http://mall.lemonban.com:8107/p/order/isPay/1901684246184202240
+2025-03-17 17:17:23 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8","Authorization": "bearer1e3f84a2-8fca-498f-a48a-bffc4864b5fa"}
+2025-03-17 17:17:23 INFO  BaseTest:47 - ????:Request_Parametersnull
+2025-03-17 17:17:23 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:23 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:23 INFO  BaseTest:76 - ????Response Time:720ms
+2025-03-17 17:17:23 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=0A297A17AE7AC8A8585C9DF9F865A10F; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:24 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:23 INFO  BaseTest:78 - ???Response Body:false
+2025-03-17 17:17:23 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:23 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:34 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:34 INFO  BaseTest:209 - {{phone}}is being replaced to :14504513924
+2025-03-17 17:17:34 INFO  BaseTest:210 - Data after replacement is  :{"mobile":"14504513924"}
+2025-03-17 17:17:34 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:34 INFO  BaseTest:209 - {{phone}}is being replaced to :14504513924
+2025-03-17 17:17:34 INFO  BaseTest:210 - Data after replacement is  :{"code":"SELECT mobile_code FROM tz_sms_log WHERE user_phone = '14504513924' ORDER BY rec_date DESC LIMIT 1;"}
+2025-03-17 17:17:34 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:34 INFO  BaseTest:44 - ????Request_Method:put
+2025-03-17 17:17:34 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/user/sendRegisterSms
+2025-03-17 17:17:34 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:17:34 INFO  BaseTest:47 - ????:Request_Parameters{"mobile":"14504513924"}
+2025-03-17 17:17:37 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:37 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:37 INFO  BaseTest:76 - ????Response Time:3025ms
+2025-03-17 17:17:37 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Length=0, Date=Mon, 17 Mar 2025 17:17:36 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:37 INFO  BaseTest:78 - ???Response Body:
+2025-03-17 17:17:37 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:37 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:37 INFO  BaseTest:176 - ===========???? PostSQL execution==========
+2025-03-17 17:17:46 INFO  BaseTest:183 - SQLQuery is :SELECT mobile_code FROM tz_sms_log WHERE user_phone = '14504513924' ORDER BY rec_date DESC LIMIT 1;
+2025-03-17 17:17:46 INFO  BaseTest:184 - Value received from SQL:108922
+2025-03-17 17:17:46 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:46 INFO  BaseTest:209 - {{phone}}is being replaced to :14504513924
+2025-03-17 17:17:46 INFO  BaseTest:210 - Data after replacement is  :{"mobile":"14504513924","validCode":"{{code}}"}
+2025-03-17 17:17:46 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:46 INFO  BaseTest:209 - {{code}}is being replaced to :108922
+2025-03-17 17:17:46 INFO  BaseTest:210 - Data after replacement is  :{"mobile":"14504513924","validCode":"108922"}
+2025-03-17 17:17:46 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:46 INFO  BaseTest:44 - ????Request_Method:put
+2025-03-17 17:17:46 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/user/checkRegisterSms
+2025-03-17 17:17:46 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:17:46 INFO  BaseTest:47 - ????:Request_Parameters{"mobile":"14504513924","validCode":"108922"}
+2025-03-17 17:17:47 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:47 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:47 INFO  BaseTest:76 - ????Response Time:796ms
+2025-03-17 17:17:47 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=text/plain;charset=UTF-8, Content-Length=32, Date=Mon, 17 Mar 2025 17:17:47 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:47 INFO  BaseTest:78 - ???Response Body:60deec45897c462d9c3932052bfd5bd1
+2025-03-17 17:17:47 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:47 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:47 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:47 INFO  BaseTest:165 - ???Variable_Key:checksmsflag????Variable_Value:60deec45897c462d9c3932052bfd5bd1
+2025-03-17 17:17:47 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:47 INFO  BaseTest:209 - {{checksmsflag}}is being replaced to :60deec45897c462d9c3932052bfd5bd1
+2025-03-17 17:17:47 INFO  BaseTest:210 - Data after replacement is  :{"appType":3,"checkRegisterSmsFlag":"60deec45897c462d9c3932052bfd5bd1","mobile":"{{phone}}","userName":"{{username}}","password":"123456","registerOrBind":1,"validateType":1}
+2025-03-17 17:17:47 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:47 INFO  BaseTest:209 - {{phone}}is being replaced to :14504513924
+2025-03-17 17:17:47 INFO  BaseTest:210 - Data after replacement is  :{"appType":3,"checkRegisterSmsFlag":"60deec45897c462d9c3932052bfd5bd1","mobile":"14504513924","userName":"{{username}}","password":"123456","registerOrBind":1,"validateType":1}
+2025-03-17 17:17:47 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:47 INFO  BaseTest:209 - {{username}}is being replaced to :Lavern
+2025-03-17 17:17:47 INFO  BaseTest:210 - Data after replacement is  :{"appType":3,"checkRegisterSmsFlag":"60deec45897c462d9c3932052bfd5bd1","mobile":"14504513924","userName":"Lavern","password":"123456","registerOrBind":1,"validateType":1}
+2025-03-17 17:17:47 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:47 INFO  BaseTest:209 - {{phone}}is being replaced to :14504513924
+2025-03-17 17:17:47 INFO  BaseTest:210 - Data after replacement is  :{"SELECT COUNT(*) FROM tz_user WHERE user_mobile = '14504513924';":1}
+2025-03-17 17:17:47 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:47 INFO  BaseTest:44 - ????Request_Method:put
+2025-03-17 17:17:47 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/user/registerOrBindUser
+2025-03-17 17:17:47 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:17:47 INFO  BaseTest:47 - ????:Request_Parameters{"appType":3,"checkRegisterSmsFlag":"60deec45897c462d9c3932052bfd5bd1","mobile":"14504513924","userName":"Lavern","password":"123456","registerOrBind":1,"validateType":1}
+2025-03-17 17:17:47 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:47 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:47 INFO  BaseTest:76 - ????Response Time:760ms
+2025-03-17 17:17:47 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json;charset=UTF-8, Content-Length=243, Date=Mon, 17 Mar 2025 17:17:47 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:47 INFO  BaseTest:78 - ???Response Body:{"access_token":"41efdd4c-7123-4464-aa44-46a985d6fc37","token_type":"bearer","refresh_token":"7b7e24d4-6162-4d2e-8e61-7853fca04fb8","expires_in":1295999,"pic":null,"userId":"a633e24e54a54616af442863601d308a","nickName":"Lavern","enabled":true}
+2025-03-17 17:17:47 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:47 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:47 INFO  BaseTest:132 - =================?????DB assertion=================
+2025-03-17 17:17:52 INFO  BaseTest:138 - ???SQL??SQLQuery is :SELECT COUNT(*) FROM tz_user WHERE user_mobile = '14504513924';
+2025-03-17 17:17:52 INFO  BaseTest:139 - ??? expected value :1???? actual value:1
+2025-03-17 17:17:52 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:52 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:52 INFO  BaseTest:45 - ????Request_URL:http://api.lemonban.com:8788/futureloan/member/login
+2025-03-17 17:17:52 INFO  BaseTest:46 - ???:Request_Headers{"X-Lemonban-Media-Type":"lemonban.v3","Content-Type":"application/json"}
+2025-03-17 17:17:52 INFO  BaseTest:47 - ????:Request_Parameters{"mobile_phone":"13323231111","pwd":"12345678"}
+2025-03-17 17:17:53 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:53 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:53 INFO  BaseTest:76 - ????Response Time:1179ms
+2025-03-17 17:17:53 INFO  BaseTest:77 - ???Response Header:[Content-Type=application/json;charset=UTF-8, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:54 GMT]
+2025-03-17 17:17:53 INFO  BaseTest:78 - ???Response Body:{"code":0,"msg":"OK","data":{"id":6,"leave_amount":1.072694748E7,"mobile_phone":"13323231111","reg_name":"???6","reg_time":"2023-02-14 13:34:46.0","type":1,"token_info":{"token_type":"Bearer","expires_in":"2025-03-18 01:22:54","token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjYsImV4cCI6MTc0MjIzMjE3NH0.jFoYf5uNHAM18I8m2X3WqAGzFpt2Kk8X3etCvWBZCWYOGnPdnqi2u264MBYuYlVR3OrjF6eqp3kFpf3pF2rh0w"}},"copyright":"Copyright ??? © 2017-2020 ????????????? All Rights Reserved"}
+2025-03-17 17:17:53 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:53 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:53 INFO  BaseTest:116 - ??????????????msg?????OK?????OK?
+2025-03-17 17:17:53 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:53 INFO  BaseTest:165 - ???Variable_Key:memberId????Variable_Value:6
+2025-03-17 17:17:53 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:53 INFO  BaseTest:165 - ???Variable_Key:token????Variable_Value:eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjYsImV4cCI6MTc0MjIzMjE3NH0.jFoYf5uNHAM18I8m2X3WqAGzFpt2Kk8X3etCvWBZCWYOGnPdnqi2u264MBYuYlVR3OrjF6eqp3kFpf3pF2rh0w
+2025-03-17 17:17:53 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:53 INFO  BaseTest:209 - {{token}}is being replaced to :eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjYsImV4cCI6MTc0MjIzMjE3NH0.jFoYf5uNHAM18I8m2X3WqAGzFpt2Kk8X3etCvWBZCWYOGnPdnqi2u264MBYuYlVR3OrjF6eqp3kFpf3pF2rh0w
+2025-03-17 17:17:53 INFO  BaseTest:210 - Data after replacement is  :{"X-Lemonban-Media-Type":"lemonban.v3","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjYsImV4cCI6MTc0MjIzMjE3NH0.jFoYf5uNHAM18I8m2X3WqAGzFpt2Kk8X3etCvWBZCWYOGnPdnqi2u264MBYuYlVR3OrjF6eqp3kFpf3pF2rh0w"}
+2025-03-17 17:17:53 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:53 INFO  BaseTest:209 - {{memberId}}is being replaced to :6
+2025-03-17 17:17:53 INFO  BaseTest:210 - Data after replacement is  :{"member_id": 6,"amount": 10000.0,"timestamp": {{timestamp}},"sign": "{{sign}}"}
+2025-03-17 17:17:53 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:53 INFO  BaseTest:209 - {{timestamp}}is being replaced to :1742231873
+2025-03-17 17:17:53 INFO  BaseTest:210 - Data after replacement is  :{"member_id": 6,"amount": 10000.0,"timestamp": 1742231873,"sign": "{{sign}}"}
+2025-03-17 17:17:53 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:53 INFO  BaseTest:209 - {{sign}}is being replaced to :wyYBEsklHfGDEyv331bSRAE6IXwm+QW2rKbypPXeTUr/577hXOt8iC4LSVqwhWz5qaMgIo8owB3x
+Fns3h4+IyiYJYQutfOaslqUcWbItqaTLtSJLJBEmEl2A2guaHnosWRNwunoxuZR6K2kX5+ZO+ozE
+tZ0fhqKPLFQe+RrWV/I=
+
+2025-03-17 17:17:53 INFO  BaseTest:210 - Data after replacement is  :{"member_id": 6,"amount": 10000.0,"timestamp": 1742231873,"sign": "wyYBEsklHfGDEyv331bSRAE6IXwm+QW2rKbypPXeTUr/577hXOt8iC4LSVqwhWz5qaMgIo8owB3x
+Fns3h4+IyiYJYQutfOaslqUcWbItqaTLtSJLJBEmEl2A2guaHnosWRNwunoxuZR6K2kX5+ZO+ozE
+tZ0fhqKPLFQe+RrWV/I=
+"}
+2025-03-17 17:17:53 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:53 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:53 INFO  BaseTest:45 - ????Request_URL:http://api.lemonban.com:8788/futureloan/member/recharge
+2025-03-17 17:17:53 INFO  BaseTest:46 - ???:Request_Headers{"X-Lemonban-Media-Type":"lemonban.v3","Content-Type":"application/json","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjYsImV4cCI6MTc0MjIzMjE3NH0.jFoYf5uNHAM18I8m2X3WqAGzFpt2Kk8X3etCvWBZCWYOGnPdnqi2u264MBYuYlVR3OrjF6eqp3kFpf3pF2rh0w"}
+2025-03-17 17:17:53 INFO  BaseTest:47 - ????:Request_Parameters{"member_id": 6,"amount": 10000.0,"timestamp": 1742231873,"sign": "wyYBEsklHfGDEyv331bSRAE6IXwm+QW2rKbypPXeTUr/577hXOt8iC4LSVqwhWz5qaMgIo8owB3x
+Fns3h4+IyiYJYQutfOaslqUcWbItqaTLtSJLJBEmEl2A2guaHnosWRNwunoxuZR6K2kX5+ZO+ozE
+tZ0fhqKPLFQe+RrWV/I=
+"}
+2025-03-17 17:17:54 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:54 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:54 INFO  BaseTest:76 - ????Response Time:637ms
+2025-03-17 17:17:54 INFO  BaseTest:77 - ???Response Header:[Content-Type=application/json;charset=UTF-8, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:54 GMT]
+2025-03-17 17:17:54 INFO  BaseTest:78 - ???Response Body:{"code":0,"msg":"OK","data":{"id":6,"leave_amount":1.073694748E7,"mobile_phone":"13323231111","reg_name":"???6","reg_time":"2023-02-14 13:34:46.0","type":1},"copyright":"Copyright ??? © 2017-2020 ????????????? All Rights Reserved"}
+2025-03-17 17:17:54 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:54 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:54 INFO  BaseTest:116 - ??????????????msg?????OK?????OK?
+2025-03-17 17:17:54 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:54 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:54 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/login
+2025-03-17 17:17:54 INFO  BaseTest:46 - ???:Request_Headers{"Content-Type":"application/json; charset=UTF-8"}
+2025-03-17 17:17:54 INFO  BaseTest:47 - ????:Request_Parameters{"principal":"lemon70","credentials":"12345678","appType":3,"loginType":0}
+2025-03-17 17:17:55 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:55 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:55 INFO  BaseTest:76 - ????Response Time:919ms
+2025-03-17 17:17:55 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Set-Cookie=JSESSIONID=44C73AD53592422109F655DDCF4A39E6; Path=/; HttpOnly, Content-Type=application/json;charset=UTF-8, Content-Length=316, Date=Mon, 17 Mar 2025 17:17:55 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:55 INFO  BaseTest:78 - ???Response Body:{"access_token":"e4f2ebd1-485f-4b28-814e-965ab283dc39","token_type":"bearer","refresh_token":"ec8f61d2-821a-44fa-ba57-0c49b5677664","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2025/03/b9ffae0784de4b46baf187bc3c013b7a.png","userId":"6e82d8331fd74e5eb38a8524bea3a2fc","nickName":"lemon70","enabled":true}
+2025-03-17 17:17:55 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:55 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:55 INFO  BaseTest:116 - ??????????????nickName?????lemon70?????lemon70?
+2025-03-17 17:17:55 INFO  BaseTest:116 - ??????????????enabled?????true?????true?
+2025-03-17 17:17:55 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:55 INFO  BaseTest:165 - ???Variable_Key:token????Variable_Value:e4f2ebd1-485f-4b28-814e-965ab283dc39
+2025-03-17 17:17:55 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:55 INFO  BaseTest:209 - {{token}}is being replaced to :e4f2ebd1-485f-4b28-814e-965ab283dc39
+2025-03-17 17:17:55 INFO  BaseTest:210 - Data after replacement is  :{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39"
+}
+2025-03-17 17:17:55 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:55 INFO  BaseTest:44 - ????Request_Method:get
+2025-03-17 17:17:55 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/user/centerInfo
+2025-03-17 17:17:55 INFO  BaseTest:46 - ???:Request_Headers{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39"
+}
+2025-03-17 17:17:55 INFO  BaseTest:47 - ????:Request_Parameters[]
+2025-03-17 17:17:57 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:57 INFO  BaseTest:75 - ?????Status Code:404
+2025-03-17 17:17:57 INFO  BaseTest:76 - ????Response Time:1623ms
+2025-03-17 17:17:57 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=720E2041A59F0D105E4916FE74074140; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:58 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:57 INFO  BaseTest:78 - ???Response Body:{"timestamp":"2025-03-18 01:17:58","status":404,"error":"Not Found","message":"","path":"/p/user/centerInfo%5B%5D"}
+2025-03-17 17:17:57 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:57 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?404?expected value : ????200?
+2025-03-17 17:17:57 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:57 INFO  BaseTest:209 - {{token}}is being replaced to :e4f2ebd1-485f-4b28-814e-965ab283dc39
+2025-03-17 17:17:57 INFO  BaseTest:210 - Data after replacement is  :{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39","Content-Type":"multipart/form-data"
+}
+2025-03-17 17:17:57 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:57 INFO  BaseTest:44 - ????Request_Method:post
+2025-03-17 17:17:57 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/file/upload
+2025-03-17 17:17:57 INFO  BaseTest:46 - ???:Request_Headers{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39","Content-Type":"multipart/form-data"
+}
+2025-03-17 17:17:57 INFO  BaseTest:47 - ????:Request_Parameterssrc/test/resources/lemon_photo.png
+2025-03-17 17:17:58 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:58 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:58 INFO  BaseTest:76 - ????Response Time:671ms
+2025-03-17 17:17:58 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=FDA128796466160C0A97DB71FAD473F1; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Type=application/json, Transfer-Encoding=chunked, Date=Mon, 17 Mar 2025 17:17:59 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:58 INFO  BaseTest:78 - ???Response Body:{"resourcesUrl":"http://shop.lemonban.com:8108/","filePath":"2025/03/111ef0a805944a3f8b2cce59b81473e0.png"}
+2025-03-17 17:17:58 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:58 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?
+2025-03-17 17:17:58 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:58 INFO  BaseTest:165 - ???Variable_Key:filePath????Variable_Value:2025/03/111ef0a805944a3f8b2cce59b81473e0.png
+2025-03-17 17:17:58 INFO  BaseTest:164 - =================????Response Extraction=================
+2025-03-17 17:17:58 INFO  BaseTest:165 - ???Variable_Key:resourcesUrl????Variable_Value:http://shop.lemonban.com:8108/
+2025-03-17 17:17:58 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:58 INFO  BaseTest:209 - {{token}}is being replaced to :e4f2ebd1-485f-4b28-814e-965ab283dc39
+2025-03-17 17:17:58 INFO  BaseTest:210 - Data after replacement is  :{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39","Content-Type":"application/json; charset=UTF-8"
+}
+2025-03-17 17:17:58 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:58 INFO  BaseTest:209 - {{resourcesUrl}}is being replaced to :http://shop.lemonban.com:8108/
+2025-03-17 17:17:58 INFO  BaseTest:210 - Data after replacement is  :{"avatarUrl":"http://shop.lemonban.com:8108/{{filePath}}","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-03-17 17:17:58 INFO  BaseTest:208 - ===========Replacement Info==========
+2025-03-17 17:17:58 INFO  BaseTest:209 - {{filePath}}is being replaced to :2025/03/111ef0a805944a3f8b2cce59b81473e0.png
+2025-03-17 17:17:58 INFO  BaseTest:210 - Data after replacement is  :{"avatarUrl":"http://shop.lemonban.com:8108/2025/03/111ef0a805944a3f8b2cce59b81473e0.png","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-03-17 17:17:58 INFO  BaseTest:43 - =================????Request_information=================
+2025-03-17 17:17:58 INFO  BaseTest:44 - ????Request_Method:put
+2025-03-17 17:17:58 INFO  BaseTest:45 - ????Request_URL:http://shop.lemonban.com:8107/p/user/setUserInfo
+2025-03-17 17:17:58 INFO  BaseTest:46 - ???:Request_Headers{"Authorization": "bearer e4f2ebd1-485f-4b28-814e-965ab283dc39","Content-Type":"application/json; charset=UTF-8"
+}
+2025-03-17 17:17:58 INFO  BaseTest:47 - ????:Request_Parameters{"avatarUrl":"http://shop.lemonban.com:8108/2025/03/111ef0a805944a3f8b2cce59b81473e0.png","nickName":"lemon70","userMobile":"17899887766","auth":{}}
+2025-03-17 17:17:59 INFO  BaseTest:74 - =================????Response Info =================
+2025-03-17 17:17:59 INFO  BaseTest:75 - ?????Status Code:200
+2025-03-17 17:17:59 INFO  BaseTest:76 - ????Response Time:578ms
+2025-03-17 17:17:59 INFO  BaseTest:77 - ???Response Header:[Vary=Origin, Vary=Access-Control-Request-Method, Vary=Access-Control-Request-Headers, Set-Cookie=JSESSIONID=FD5093542B57E2A7B84E1573B9701707; Path=/; HttpOnly, X-Content-Type-Options=nosniff, X-XSS-Protection=1; mode=block, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, Pragma=no-cache, Expires=0, X-Frame-Options=DENY, Content-Length=0, Date=Mon, 17 Mar 2025 17:17:59 GMT, Keep-Alive=timeout=60, Connection=keep-alive]
+2025-03-17 17:17:59 INFO  BaseTest:78 - ???Response Body:
+2025-03-17 17:17:59 INFO  BaseTest:96 - =================???? Response Assertion Info=================
+2025-03-17 17:17:59 INFO  BaseTest:103 - http status code assertion:  ???actual value: ?200?expected value : ????200?

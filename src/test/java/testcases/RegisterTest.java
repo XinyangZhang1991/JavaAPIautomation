@@ -1,11 +1,11 @@
-package API_Automation_FrameWork.testcases;
+package testcases;
 
 
-import API_Automation_FrameWork.common.BaseTest;
-import API_Automation_FrameWork.common.Environment;
-import API_Automation_FrameWork.pojo.CaseData;
-import API_Automation_FrameWork.util.ExcelUtil;
-import API_Automation_FrameWork.util.RandomDataUtil;
+import common.BaseTest;
+import common.Environment;
+import pojo.CaseData;
+import util.ExcelUtil;
+import util.RandomDataUtil;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

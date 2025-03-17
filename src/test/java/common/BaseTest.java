@@ -1,8 +1,8 @@
-package API_Automation_FrameWork.common;
+package common;
 
 
-import API_Automation_FrameWork.pojo.CaseData;
-import API_Automation_FrameWork.util.JDBCUtil;
+import pojo.CaseData;
+import util.JDBCUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;

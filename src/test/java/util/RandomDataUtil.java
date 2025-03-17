@@ -1,4 +1,4 @@
-package API_Automation_FrameWork.util;
+package util;
 
 
 import com.github.javafaker.Faker;

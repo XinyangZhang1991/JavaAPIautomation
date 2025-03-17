@@ -1,7 +1,7 @@
 package SoloPactice;
 
 
-import API_Automation_FrameWork.common.Environment;
+import common.Environment;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.path.json.JsonPath;

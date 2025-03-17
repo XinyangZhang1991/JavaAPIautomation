@@ -1,7 +1,7 @@
 package SoloPactice;
 
 
-import API_Automation_FrameWork.util.JDBCUtil;
+import util.JDBCUtil;
 import com.github.javafaker.Faker;
 
 import java.util.Locale;

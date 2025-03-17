@@ -1,8 +1,8 @@
 package SoloPactice;
 
 
-import API_Automation_FrameWork.pojo.CaseData;
-import API_Automation_FrameWork.util.ExcelUtil;
+import pojo.CaseData;
+import util.ExcelUtil;
 import com.alibaba.excel.EasyExcel;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

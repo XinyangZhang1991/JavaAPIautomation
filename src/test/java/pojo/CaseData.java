@@ -1,4 +1,4 @@
-package API_Automation_FrameWork.pojo;
+package pojo;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.AllArgsConstructor;

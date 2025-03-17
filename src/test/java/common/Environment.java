@@ -1,4 +1,4 @@
-package API_Automation_FrameWork.common;
+package common;
 
 
 import java.util.HashMap;

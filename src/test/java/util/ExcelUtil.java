@@ -1,7 +1,7 @@
-package API_Automation_FrameWork.util;
+package util;
 
 
-import API_Automation_FrameWork.pojo.CaseData;
+import pojo.CaseData;
 import com.alibaba.excel.EasyExcel;
 
 import java.util.List;

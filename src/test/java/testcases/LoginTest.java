@@ -1,9 +1,9 @@
-package API_Automation_FrameWork.testcases;
-import API_Automation_FrameWork.common.BaseTest;
-import API_Automation_FrameWork.util.ExcelUtil;
+package testcases;
+import common.BaseTest;
+import util.ExcelUtil;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import API_Automation_FrameWork.pojo.CaseData;
+import pojo.CaseData;
 
 public class LoginTest extends BaseTest {
 

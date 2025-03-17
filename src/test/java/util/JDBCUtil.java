@@ -1,4 +1,4 @@
-package API_Automation_FrameWork.util;
+package util;
 
 
 import org.apache.commons.dbutils.QueryRunner;
