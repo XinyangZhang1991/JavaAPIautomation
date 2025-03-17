@@ -1,12 +1,11 @@
 package SoloPactice;
 
 
-import Day05.pojo.CaseData;
-import Day05.util.ExcelUtil;
+import API_Automation_FrameWork.pojo.CaseData;
+import API_Automation_FrameWork.util.ExcelUtil;
 import com.alibaba.excel.EasyExcel;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Day05.util;
+package API_Automation_FrameWork.util;
 
 import static io.restassured.RestAssured.given;
 

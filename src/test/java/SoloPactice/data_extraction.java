@@ -1,7 +1,7 @@
 package SoloPactice;
 
 
-import Day05.common.Environment;
+import API_Automation_FrameWork.common.Environment;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.path.json.JsonPath;
@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Set;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 public class data_extraction {
 

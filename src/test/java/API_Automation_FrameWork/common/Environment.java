@@ -1,4 +1,4 @@
-package Day05.common;
+package API_Automation_FrameWork.common;
 
 
 import java.util.HashMap;

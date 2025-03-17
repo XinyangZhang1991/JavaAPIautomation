@@ -1,10 +1,10 @@
-package Day05.testcases;
+package API_Automation_FrameWork.testcases;
 
 
-import Day05.common.BaseTest;
-import Day05.common.Environment;
-import Day05.pojo.CaseData;
-import Day05.util.ExcelUtil;
+import API_Automation_FrameWork.common.BaseTest;
+import API_Automation_FrameWork.common.Environment;
+import API_Automation_FrameWork.pojo.CaseData;
+import API_Automation_FrameWork.util.ExcelUtil;
 import com.lemon.encryption.RSAManager;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;

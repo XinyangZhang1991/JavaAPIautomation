@@ -1,9 +1,8 @@
-package Day05.common;
+package API_Automation_FrameWork.common;
 
 
-import Day05.pojo.CaseData;
-import Day05.util.JDBCUtil;
-import Day05.util.Log4jTest;
+import API_Automation_FrameWork.pojo.CaseData;
+import API_Automation_FrameWork.util.JDBCUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
